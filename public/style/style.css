@@ -105,3 +105,38 @@ span {
         /* 4 slides per row on desktops */
     }
 }
+
+/* Reset some default body styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    /* Prevent scrollbars */
+}
+
+/* Make sure the video covers the full background */
+#bg-video {
+    position: fixed;
+    /* Fix the video in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the video fills the screen */
+    z-index: -1;
+    /* Send the video to the back */
+}
+
+/* Container styles */
+.container {
+    position: relative;
+    z-index: 1;
+    /* Ensure content stays above the video */
+    color: white;
+    /* Text color for visibility on the video */
+    text-align: center;
+    padding: 20px;
+}
