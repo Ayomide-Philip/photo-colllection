@@ -1,19 +1,16 @@
-var angle = 0;
-function galleryspin(sign) {
-  spinner = document.querySelector("#spinner");
-  if (!sign) {
-    angle = angle + 45;
-  } else {
-    angle = angle - 45;
-  }
-  spinner.setAttribute(
-    "style",
-    "-webkit-transform: rotateY(" +
-      angle +
-      "deg); -moz-transform: rotateY(" +
-      angle +
-      "deg); transform: rotateY(" +
-      angle +
-      "deg);"
-  );
-}
+var swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 350,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
