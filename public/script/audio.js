@@ -1,4 +1,4 @@
-const availableSong = ["mood.mp3", "Duffel-Bag.mp3", "Stronger.mp3"];
+const availableSong = ["Duffel-Bag.mp3", "mood.mp3", "Stronger.mp3"];
 
 const randomNumber = Math.floor(Math.random() * availableSong.length);
 
