@@ -7,10 +7,11 @@ console.log(randomNumber);
 console.log(`./audio/${availableSong[randomNumber]}`);
 
 var song = new Audio(`./public/audio/${availableSong[randomNumber]}`);
-song.autoplay = true;
+
 window.addEventListener("click", function (events) {
   if (song.paused) {
     song.play();
+    song.autoplay = true;
   } else {
     console.log("Song is playing");
   }
